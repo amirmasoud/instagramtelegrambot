@@ -15,6 +15,6 @@ $app->get('/', function () {
     return 'Hello World';
 });
 
-$app->get('/foo', function () {
-    return 'Hello World';
+$app->get('/privacy-policy', function () {
+    return view('privacy-policy');
 });
