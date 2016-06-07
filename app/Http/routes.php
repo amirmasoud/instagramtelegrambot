@@ -11,6 +11,6 @@
 |
 */
 
-$app->get('foo', function () {
+$app->get('/', function () {
     return 'Hello World';
 });
