@@ -18,3 +18,7 @@ $app->get('/', function () {
 $app->get('/privacy-policy', function () {
     return view('privacy-policy');
 });
+
+$app->get('login', [
+    'as' => 'login', 'uses' => 'AppController@OAuth'
+]);
