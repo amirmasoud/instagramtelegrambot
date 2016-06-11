@@ -11,14 +11,10 @@
 |
 */
 
-$app->get('/', function () {
-    return 'Hello World';
-});
 
 $app->get('/privacy-policy', function () {
     return view('privacy-policy');
 });
 
-$app->get('login', [
-    'as' => 'login', 'uses' => 'AppController@OAuth'
-]);
+$app->get('/', 'AppController@getCode');
+$app->get('login', 'AppController@OAuth');
